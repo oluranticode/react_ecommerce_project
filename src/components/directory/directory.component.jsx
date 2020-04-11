@@ -21,47 +21,57 @@ class Directory extends React.Component{
             {
                 title: 'hats',
                 imageUrl: img1,
-                id:1
+                id:1,
+                linkUrl : 'shop'
             },
 
             {
                 title: 'Sneakers',
                 imageUrl: img3,
-                id:2
+                id:2,
+                linkUrl : ''
             },
 
             {
                 title: 'Bags',
                 imageUrl: img4,
-                id:3
+                id:3,
+                linkUrl : ''
             },
 
             {
                 title: 'Woman',
                 imageUrl: img5,
-                id:4
+                id:4,
+                linkUrl : ''
             },
 
             {
                 title: 'Man',
                 imageUrl: img2,
-                id:5
+                id:5,
+                linkUrl : ''
             },
 
             {
                 title: 'robot',
                 imageUrl: img6,
-                id:6
+                id:6,
+                linkUrl : ''
             },
             {
                 title: 'robot',
                 imageUrl: img7,
-                id:7
+                size: 'large',
+                id:7,
+                linkUrl : ''
             },
             {
                 title: 'robot',
                 imageUrl: img8,
-                id:8
+                size: 'large',
+                id:8,
+                linkUrl : ''
             }
         
             ]
@@ -72,8 +82,8 @@ class Directory extends React.Component{
         return (
             <div className="directory-menu">
             {
-                this.state.sections.map(({title, imageUrl, id}) => (
-                <MenuItem key={id} title={title} imageUrl={imageUrl} />))
+                this.state.sections.map(({id, ...otherSectionProps}) => (
+                <MenuItem key={id} {...otherSectionProps} />))
             }
             </div>
 
@@ -83,3 +93,8 @@ class Directory extends React.Component{
 }
 
 export default Directory;
+
+// {
+//     this.state.sections.map(({title, imageUrl, id, size, linkUrl}) => (
+//     <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} linkUrl = {linkUrl} />))
+// }
