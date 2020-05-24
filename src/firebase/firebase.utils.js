@@ -4,14 +4,14 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-    apiKey: "AIzaSyAP0tUwKNvvLk680yaDx0hJ5CJpS4jpbxk",
-    authDomain: "shop-db-b3e83.firebaseapp.com",
-    databaseURL: "https://shop-db-b3e83.firebaseio.com",
-    projectId: "shop-db-b3e83",
-    storageBucket: "shop-db-b3e83.appspot.com",
-    messagingSenderId: "612443380572",
-    appId: "1:612443380572:web:2878efd28650f6a4fdff99",
-    measurementId: "G-6XSXSPPVQT"
+    apiKey: "AIzaSyABVanckDctzRB-OncrStsaXfryXi3QvTo",
+    authDomain: "oludb-c7735.firebaseapp.com",
+    databaseURL: "https://oludb-c7735.firebaseio.com",
+    projectId: "oludb-c7735",
+    storageBucket: "oludb-c7735.appspot.com",
+    messagingSenderId: "31728363680",
+    appId: "1:31728363680:web:b87538ba4517b2a5a6c1c5",
+    measurementId: "G-ZZ1KG6324W"
   };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
@@ -29,7 +29,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 
         try {
             await userRef.set({
-                displayName,
+                displayName,   
                 email,
                 createdAt,
                 ...additionalData
