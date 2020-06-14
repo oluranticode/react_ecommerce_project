@@ -19,7 +19,7 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
             <div className="arrow" onClick={() => addItem(cartItem)}>&#129308;</div>
         </span>
 
-        <span className='price'>{price}</span>
+        <span className='price'> ₦ {price}</span>
         <span className='remove-button' onClick={() => clearItem(cartItem)}>&#10008;</span>
     </div>
 );

@@ -1,26 +1,32 @@
+// HATS
 import img1 from './images/1.jpg';
 import img2 from './images/5.jpg';
 import img3 from './images/6.jpg';
 import img4 from './images/7.jpg';
-import img5 from './images/g1.jpg';
-import img6 from './images/g2.jpg';
+// SNEAKERS
+import img5 from './images/k3.jpg';
+import img6 from './images/k2.jpg';
 import img7 from './images/ab.jpg';
 import img8 from './images/b1.jpg';
-import img9 from './images/s2.jpg';
-import img10 from './images/s3.jpg';
-import img11 from './images/s4.jpg';
-import img12 from './images/s8.jpg';
+// G-SHOCKS
+import img9 from './images/g1.jpg';
+import img10 from './images/g2.jpg';
+import img11 from './images/g3.jpg';
+import img12 from './images/g4.jpg';
+//WOMEN
 import img13 from './images/r1.jpg';
 import img14 from './images/r2.jpg';
 import img15 from './images/r3.jpg';
 import img16 from './images/r4.jpg';
+//MEN
 import img17 from './images/t1.jpg';
 import img18 from './images/t2.jpg';
 import img19 from './images/t3.jpg';
 import img20 from './images/t4.jpg';
 
-const SHOP_DATA = [
-    {
+const SHOP_DATA = {
+  //hats..................
+   hats: {
       id: 1,
       title: 'Hats',
       routeName: 'hats',
@@ -81,7 +87,8 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    //sneakers............................
+   sneakers: {
       id: 2,
       title: 'Sneakers',
       routeName: 'sneakers',
@@ -136,10 +143,11 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    //gshock..................................
+   gshock: {
       id: 3,
-      title: 'Jackets',
-      routeName: 'jackets',
+      title: 'G-SHOCKS',
+      routeName: 'gshock',
       items: [
         {
           id: 18,
@@ -173,10 +181,11 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    //woman.........................
+    woman: {
       id: 4,
       title: 'Womens',
-      routeName: 'womens',
+      routeName: 'woman',
       items: [
         {
           id: 23,
@@ -222,10 +231,11 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    //man..................................
+    man: {
       id: 5,
       title: 'Mens',
-      routeName: 'mens',
+      routeName: 'man',
       items: [
         {
           id: 30,
@@ -265,6 +275,6 @@ const SHOP_DATA = [
         }
       ]
     }
-  ];
+};
   
   export default SHOP_DATA;

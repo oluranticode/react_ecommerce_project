@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
+//import PaystackCheckoutButton from '../../components/paystack-button/paystack-button.component';
 
 import { selectCartItems } from '../../redux/cart/cart.selectors';
 import { selectCartTotal } from '../../redux/cart/cart.selectors';
@@ -39,9 +40,10 @@ const CheckOutPage = ({ cartItems, total }) => {
             )
        }
        <div className="total">
-       <span> &#128179; TOTAL: ‎₦{total}</span> <p></p>
+       <span> &#128179; TOTAL: ‎₦ {total}</span> <p></p>
        </div>
-        </div>
+      
+               </div>
     );
 }
 
